@@ -21,30 +21,25 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
-using ArtemisFramework.BusinessLayer.PageParts.Shared;
-using ArtemisFramework.BusinessLayer.PageParts.Views;
+using NUnit.Framework;
 
-namespace ArtemisFramework.BusinessLayer.PageParts
+namespace ArtemisFramework.TestLayer.Configurations
 {
-    public class PageParts
+    public sealed class Contact_Tests : Contact_Config
     {
-        public _Shared Shared = new _Shared();
-        public _Views Views = new _Views();
-
-        public class _Shared
+        [Test]
+        public void T1_Do_Something()
         {
-            public Helpers Helpers = new Helpers();
-        }
+            // Arrange
+            // e.g. Arrange all necessary preconditions and inputs.
 
-        public class _Views
-        {
-            public Login Login = new Login();
-            public Google Google = new Google();
-            public Logout Logout = new Logout();
-            public Navigation Navigation = new Navigation();
-            public Contact Contact = new Contact();
-            public Home Home = new Home();
-            public Register Register = new Register();
+            // Act 
+            // e.g. Act on the object or method under test.
+            PageParts.Views.Contact.Do_Something();
+
+            // Assert
+            // e.g. Assert that the expected results have occurred.
+            Assert.AreEqual("Some text", PageParts.Views.Contact.Get_SomeText());
         }
     }
 }

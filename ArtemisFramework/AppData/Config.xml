@@ -8,13 +8,14 @@
     <user default="n" password="pass">user1</user>
   </users>
   <browsers>
-    <browser default="y">IE</browser>
-    <browser default="n">Chrome</browser>
+    <browser default="n">IE</browser>
+    <browser default="y">Chrome</browser>
     <browser default="n">Firefox</browser>    
   </browsers>
   <window>
     <size default="n">Fullscreen</size>
-    <size default="y" width="1600" height="1000">Sized</size>
+    <size default="y" width="1200" height="800">Sized</size>
+    <size default="n" width="1600" height="1000">Sized</size>
   </window>
   <configurations>
     <configuration default="y">Release</configuration>

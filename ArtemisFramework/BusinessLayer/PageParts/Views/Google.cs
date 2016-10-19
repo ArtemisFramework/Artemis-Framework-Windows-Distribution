@@ -21,30 +21,23 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
-using ArtemisFramework.BusinessLayer.PageParts.Shared;
-using ArtemisFramework.BusinessLayer.PageParts.Views;
+using OpenQA.Selenium;
+using ArtemisFramework.BusinessLayer.Core;
 
-namespace ArtemisFramework.BusinessLayer.PageParts
+namespace ArtemisFramework.BusinessLayer.PageParts.Views
 {
-    public class PageParts
+    public class Google : WebDriver
     {
-        public _Shared Shared = new _Shared();
-        public _Views Views = new _Views();
-
-        public class _Shared
+        public void Navigate_To_Google()
         {
-            public Helpers Helpers = new Helpers();
+            // The command 'XMLLayer.Config.URL()' will return "www.google.com", because this is the default value in the XML config file
+            driver.Navigate().GoToUrl(XMLLayer.Config.URL());
         }
 
-        public class _Views
+        public string Get_Title()
         {
-            public Login Login = new Login();
-            public Google Google = new Google();
-            public Logout Logout = new Logout();
-            public Navigation Navigation = new Navigation();
-            public Contact Contact = new Contact();
-            public Home Home = new Home();
-            public Register Register = new Register();
+            System.Threading.Thread.Sleep(1000);
+            return driver.Title;
         }
     }
 }

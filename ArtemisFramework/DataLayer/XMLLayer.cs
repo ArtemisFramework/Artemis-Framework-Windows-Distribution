@@ -61,41 +61,73 @@ namespace ArtemisFramework.DataLayer
             }
             #endregion
 
+            /// <summary>
+            /// This command will return the default URL: default="y"
+            /// </summary>
+            /// <returns>URL</returns>
             public string URL()
             {
                 return InnerText("//url");
             }
 
+            /// <summary>
+            /// This command will return the default user: default="y"
+            /// </summary>
+            /// <returns>User</returns>
             public string User()
             {
                 return InnerText("//user");
             }
 
+            /// <summary>
+            /// This command will return the default password: default="y"
+            /// </summary>
+            /// <returns>Password</returns>
             public string Password()
             {
                 return AttributeText("//user", "password");
             }
 
+            /// <summary>
+            /// This command will return the default browser: default="y"
+            /// </summary>
+            /// <returns>Browser</returns>
             public string Browser()
             {
                 return InnerText("//browser");
             }
 
+            /// <summary>
+            /// This command will return the default windows size: default="y"
+            /// </summary>
+            /// <returns>WindowSize</returns>
             public string WindowSize()
             {
                 return InnerText("//size");
             }
 
+            /// <summary>
+            /// This command will return the default window width: default="y"
+            /// </summary>
+            /// <returns>WindowWidth</returns>
             public int WindowWidth()
             {
                 return Convert.ToInt32(AttributeText("//size", "width"));
             }
 
+            /// <summary>
+            /// This command will return the default window height: default="y"
+            /// </summary>
+            /// <returns>WindowHeight</returns>
             public int WindowHeight()
             {
                 return Convert.ToInt32(AttributeText("//size", "height"));
             }
 
+            /// <summary>
+            /// This command will return the default configuration: default="y"
+            /// </summary>
+            /// <returns>Configuration</returns>
             public string Configuration()
             {
                 return InnerText("//configuration");

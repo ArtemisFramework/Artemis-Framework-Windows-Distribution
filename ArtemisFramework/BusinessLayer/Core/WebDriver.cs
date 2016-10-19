@@ -86,7 +86,7 @@ namespace ArtemisFramework.BusinessLayer.Core
         // Configuration: Debug(aka. close_browser) / Release(aka. do_not_close_browser)
         public void CloseBrowser()
         {
-            switch (XMLLayer.Config.Browser())
+            switch (XMLLayer.Config.Configuration())
             {
                 default:
                     driver.Quit();

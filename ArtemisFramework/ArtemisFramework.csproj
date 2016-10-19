@@ -71,6 +71,7 @@
     <Compile Include="BusinessLayer\Core\WebDriver.cs" />
     <Compile Include="BusinessLayer\PageParts\PageParts.cs" />
     <Compile Include="BusinessLayer\PageParts\Shared\Helpers.cs" />
+    <Compile Include="BusinessLayer\PageParts\Views\Google.cs" />
     <Compile Include="BusinessLayer\PageParts\Views\Contact.cs" />
     <Compile Include="BusinessLayer\PageParts\Views\Home.cs" />
     <Compile Include="BusinessLayer\PageParts\Views\Login.cs" />
@@ -80,9 +81,15 @@
     <Compile Include="BusinessLayer\TestLayer.cs" />
     <Compile Include="DataLayer\XMLLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestLayer\Configurations\Google_Config.cs" />
+    <Compile Include="TestLayer\Configurations\Register_Config.cs" />
+    <Compile Include="TestLayer\Configurations\Navigation_Config.cs" />
     <Compile Include="TestLayer\Configurations\Contact_Config.cs" />
     <Compile Include="TestLayer\Configurations\Home_Config.cs" />
     <Compile Include="TestLayer\Interfaces\IConfig.cs" />
+    <Compile Include="TestLayer\Tests\Contact_Tests - Copy.cs" />
+    <Compile Include="TestLayer\Tests\Register_Tests.cs" />
+    <Compile Include="TestLayer\Tests\Navigation_Tests.cs" />
     <Compile Include="TestLayer\Tests\Contact_Tests.cs" />
     <Compile Include="TestLayer\Tests\Home_Tests.cs" />
   </ItemGroup>

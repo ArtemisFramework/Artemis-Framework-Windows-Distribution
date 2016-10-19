@@ -21,27 +21,48 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
+using ArtemisFramework.BusinessLayer;
+using ArtemisFramework.TestLayer.Interfaces;
 using NUnit.Framework;
 
 namespace ArtemisFramework.TestLayer.Configurations
 {
-    public sealed class Google_Tests : Google_Config
+    public abstract class Register_Config : TestFramework, IConfig
     {
-        [Test]
-        [TestCase("Google")]
-        public void T1_Check_Title(string value)
+        [OneTimeSetUp]
+        public void BeforeTestSuite()
         {
-            // Arrange
-            // e.g. Arrange all necessary preconditions and inputs.
+            // Add here methods to be used before the tests are runned
+            // e.g. 'Start browser'
 
-            // Act 
-            // e.g. Act on the object or method under test.
-            PageParts.Views.Google.Navigate_To_Google();
+            // This is the way the StartBrowser method can be used
+            PageParts.Shared.Helpers.StartBrowser();
 
-            // Assert
-            // e.g. Assert that the expected results have occurred.
-            // The 'value' parameter will be set from the NUnit TestCase attribute.
-            Assert.AreEqual(value, PageParts.Views.Google.Get_Title());
+            // In case you need authentication to perform some tests on the Home page, then you need to call the login action
+            PageParts.Views.Login.Perform(XMLLayer.Config.User(), XMLLayer.Config.Password());
+        }
+
+        [SetUp]
+        public void BeforeEachTest()
+        {
+            // Add here methods to be used before each test
+            // e.g. 'Read config file'
+        }
+
+        [TearDown]
+        public void AfterEachTest()
+        {
+            // Add here methods to be used after each test
+            // e.g. 'Write error to log file'
+        }
+
+        [OneTimeTearDown]
+        public void AfterTestSuite()
+        {
+            // Add here methods to be used after all tests have been runned     
+            // e.g. 'Close browser" , 'Write test results' , 'Generate reports'
+
+            PageParts.Shared.Helpers.CloseBrowser();
         }
     }
 }

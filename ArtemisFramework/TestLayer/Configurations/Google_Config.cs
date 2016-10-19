@@ -21,30 +21,45 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
-using ArtemisFramework.BusinessLayer.PageParts.Shared;
-using ArtemisFramework.BusinessLayer.PageParts.Views;
+using ArtemisFramework.BusinessLayer;
+using ArtemisFramework.TestLayer.Interfaces;
+using NUnit.Framework;
 
-namespace ArtemisFramework.BusinessLayer.PageParts
+namespace ArtemisFramework.TestLayer.Configurations
 {
-    public class PageParts
+    public abstract class Google_Config : TestFramework, IConfig
     {
-        public _Shared Shared = new _Shared();
-        public _Views Views = new _Views();
-
-        public class _Shared
+        [OneTimeSetUp]
+        public void BeforeTestSuite()
         {
-            public Helpers Helpers = new Helpers();
+            // Add here methods to be used before the tests are runned
+            // e.g. 'Start browser'
+
+            // This is the way the StartBrowser method can be used
+            PageParts.Shared.Helpers.StartBrowser();
         }
 
-        public class _Views
+        [SetUp]
+        public void BeforeEachTest()
         {
-            public Login Login = new Login();
-            public Google Google = new Google();
-            public Logout Logout = new Logout();
-            public Navigation Navigation = new Navigation();
-            public Contact Contact = new Contact();
-            public Home Home = new Home();
-            public Register Register = new Register();
+            // Add here methods to be used before each test
+            // e.g. 'Read config file'
+        }
+
+        [TearDown]
+        public void AfterEachTest()
+        {
+            // Add here methods to be used after each test
+            // e.g. 'Write error to log file'
+        }
+
+        [OneTimeTearDown]
+        public void AfterTestSuite()
+        {
+            // Add here methods to be used after all tests have been runned     
+            // e.g. 'Close browser" , 'Write test results' , 'Generate reports'
+
+            PageParts.Shared.Helpers.CloseBrowser();
         }
     }
 }
