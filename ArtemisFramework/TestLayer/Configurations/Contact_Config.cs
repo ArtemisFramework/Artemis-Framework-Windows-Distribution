@@ -21,25 +21,48 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
+using ArtemisFramework.BusinessLayer;
+using ArtemisFramework.TestLayer.Interfaces;
 using NUnit.Framework;
 
 namespace ArtemisFramework.TestLayer.Configurations
 {
-    public sealed class Home_Tests : Home_Config
+    public abstract class Contact_Config : TestFramework, IConfig
     {
-        [Test]
-        public void T1_Do_Something()
+        [OneTimeSetUp]
+        public void BeforeTestSuite()
         {
-            // Arrange
-            // e.g. Arrange all necessary preconditions and inputs.
+            // Add here methods to be used before the tests are runned
+            // e.g. 'Start browser'
 
-            // Act 
-            // e.g. Act on the object or method under test.
-            PageParts.Views.Home.Do_Something();
+            // This is the way the StartBrowser method can be used
+            PageParts.Shared.Helpers.StartBrowser();
 
-            // Assert
-            // e.g. Assert that the expected results have occurred.
-            Assert.AreEqual("Some text", PageParts.Views.Home.Get_SomeText());
+            // In case you need authentication to perform some tests on the Home page, then you need to call the login action
+            PageParts.Views.Login.Perform(XMLLayer.Config.User(), XMLLayer.Config.Password());
+        }
+
+        [SetUp]
+        public void BeforeEachTest()
+        {
+            // Add here methods to be used before each test
+            // e.g. 'Read config file'
+        }
+
+        [TearDown]
+        public void AfterEachTest()
+        {
+            // Add here methods to be used after each test
+            // e.g. 'Write error to log file'
+        }
+
+        [OneTimeTearDown]
+        public void AfterTestSuite()
+        {
+            // Add here methods to be used after all tests have been runned     
+            // e.g. 'Close browser" , 'Write test results' , 'Generate reports'
+
+            PageParts.Shared.Helpers.CloseBrowser();
         }
     }
 }

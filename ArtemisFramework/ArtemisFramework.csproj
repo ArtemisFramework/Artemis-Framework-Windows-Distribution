@@ -80,8 +80,10 @@
     <Compile Include="BusinessLayer\TestLayer.cs" />
     <Compile Include="DataLayer\XMLLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestLayer\Configurations\Contact_Config.cs" />
     <Compile Include="TestLayer\Configurations\Home_Config.cs" />
     <Compile Include="TestLayer\Interfaces\IConfig.cs" />
+    <Compile Include="TestLayer\Tests\Contact_Tests.cs" />
     <Compile Include="TestLayer\Tests\Home_Tests.cs" />
   </ItemGroup>
   <ItemGroup>

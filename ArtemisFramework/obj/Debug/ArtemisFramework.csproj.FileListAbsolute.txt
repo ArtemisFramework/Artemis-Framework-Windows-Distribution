@@ -18,3 +18,13 @@ C:\Users\amoiceanu\Desktop\ArtemisFramework\ArtemisFramework\bin\Debug\WebDriver
 C:\Users\amoiceanu\Desktop\ArtemisFramework\ArtemisFramework\bin\Debug\WebDriver.Support.xml
 C:\Users\amoiceanu\Desktop\ArtemisFramework\ArtemisFramework\obj\Debug\ArtemisFramework.dll
 C:\Users\amoiceanu\Desktop\ArtemisFramework\ArtemisFramework\obj\Debug\ArtemisFramework.pdb
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\ArtemisFramework.dll
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\ArtemisFramework.pdb
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\nunit.framework.dll
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\WebDriver.dll
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\WebDriver.Support.dll
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\nunit.framework.xml
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\WebDriver.xml
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\bin\Debug\WebDriver.Support.xml
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\obj\Debug\ArtemisFramework.dll
+C:\Users\amoiceanu\Downloads\Artemis-Framework-Windows-Distribution-master\Artemis-Framework-Windows-Distribution-master\ArtemisFramework\obj\Debug\ArtemisFramework.pdb

@@ -25,7 +25,7 @@ using NUnit.Framework;
 
 namespace ArtemisFramework.TestLayer.Configurations
 {
-    public sealed class Home_Tests : Home_Config
+    public sealed class Contact_Tests : Contact_Config
     {
         [Test]
         public void T1_Do_Something()
@@ -35,11 +35,11 @@ namespace ArtemisFramework.TestLayer.Configurations
 
             // Act 
             // e.g. Act on the object or method under test.
-            PageParts.Views.Home.Do_Something();
+            PageParts.Views.Contact.Do_Something();
 
             // Assert
             // e.g. Assert that the expected results have occurred.
-            Assert.AreEqual("Some text", PageParts.Views.Home.Get_SomeText());
+            Assert.AreEqual("Some text", PageParts.Views.Contact.Get_SomeText());
         }
     }
 }
