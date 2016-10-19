@@ -1,0 +1,23 @@
+﻿<config>
+  <urls>
+    <url default="y" role="beta">http://www.google.com</url>
+    <url default="n" role="production">http://www.bing.com</url>
+  </urls>
+  <users>
+    <user default="y" password="pass">admin1</user>
+    <user default="n" password="pass">user1</user>
+  </users>
+  <browsers>
+    <browser default="y">IE</browser>
+    <browser default="n">Chrome</browser>
+    <browser default="n">Firefox</browser>    
+  </browsers>
+  <window>
+    <size default="n">Fullscreen</size>
+    <size default="y" width="1600" height="1000">Sized</size>
+  </window>
+  <configurations>
+    <configuration default="y">Release</configuration>
+    <configuration default="n">Debug</configuration>
+  </configurations>
+</config>

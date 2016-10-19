@@ -1,0 +1,10 @@
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\Artemis-Framework-Windows-Distribution.dll
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\Artemis-Framework-Windows-Distribution.pdb
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\nunit.framework.dll
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\WebDriver.dll
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\WebDriver.Support.dll
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\nunit.framework.xml
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\WebDriver.xml
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\bin\Debug\WebDriver.Support.xml
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\obj\Debug\Artemis-Framework-Windows-Distribution.dll
+C:\Users\amoiceanu\Desktop\Artemis-Framework-Windows-Distribution\Artemis-Framework-Windows-Distribution\obj\Debug\Artemis-Framework-Windows-Distribution.pdb
