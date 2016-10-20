@@ -21,25 +21,23 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
-using NUnit.Framework;
+using OpenQA.Selenium;
+using ArtemisFramework.BusinessLayer.Core;
 
-namespace ArtemisFramework.TestLayer.Configurations
+namespace ArtemisFramework.BusinessLayer.PageParts.Views
 {
-    public sealed class Contact_Tests : Contact_Config
+    public class Google : WebDriver
     {
-        [Test]
-        public void T1_Do_Something()
+        public void Navigate_To_Google()
         {
-            // Arrange
-            // e.g. Arrange all necessary preconditions and inputs.
+            // The command 'XMLLayer.Config.URL()' will return "www.google.com", because this is the default value in the XML config file
+            driver.Navigate().GoToUrl(XMLLayer.Config.URL());
+        }
 
-            // Act 
-            // e.g. Act on the object or method under test.
-            PageParts.Views.Contact.Do_Something();
-
-            // Assert
-            // e.g. Assert that the expected results have occurred.
-            Assert.AreEqual("Some text", PageParts.Views.Contact.Get_SomeText());
+        public string Get_Title()
+        {
+            System.Threading.Thread.Sleep(1000);
+            return driver.Title;
         }
     }
 }
